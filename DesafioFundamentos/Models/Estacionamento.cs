@@ -18,6 +18,8 @@ namespace DesafioFundamentos.Models
             string placa = Console.ReadLine();
             if(!string.IsNullOrEmpty(placa))
                 veiculos.Add(placa);
+            else
+                Console.WriteLine("Placa inválida!");
         }
 
         public void RemoverVeiculo()
